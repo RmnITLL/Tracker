@@ -16,7 +16,7 @@ final class NewTrackerViewController: UIViewController, ServiceSheduleDelegate {
     private let vStackView = UIStackView()
     private let hStackView = UIStackView()
     private let tableView = UITableView()
-    private var tableViewService: NewCategotyButton?
+    private var tableViewService: NewCategoryButton?
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -79,7 +79,7 @@ final class NewTrackerViewController: UIViewController, ServiceSheduleDelegate {
         self.modalPresentationStyle = .currentContext
         view.backgroundColor = .ypWhite
         titleLabel.text = titleName
-        tableViewService = NewCategotyButton(chosenType: titleName)
+        tableViewService = NewCategoryButton(chosenType: titleName)
         tableView.delegate = tableViewService
         tableView.dataSource = tableViewService
         tableViewService?.viewController = self

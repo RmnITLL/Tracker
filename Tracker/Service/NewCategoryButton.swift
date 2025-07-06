@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class NewCategotyButton: NSObject, UITableViewDelegate, UITableViewDataSource {
+final class NewCategoryButton: NSObject, UITableViewDelegate, UITableViewDataSource {
     
     let trackerButtonsTexts = ["Категория", "Расписание"]
     let irregularActionButtonTexts = ["Категория"]
